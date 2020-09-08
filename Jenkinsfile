@@ -1,41 +1,41 @@
-pipeline {
- agent any
- environment {
-  dotnet = '/usr/local/share/dotnet'
- }
- 
- stages {
-  stage('Restore PACKAGES') {
-   steps {
-     	
-    sh "dotnet restore "
-   }
-  }
-  stage('Clean') {
-   steps {
-   	
-    sh 'dotnet clean'
-   }
-  }
-  stage('Build') {
-   steps {
-     sh 'dotnet build '
-   }
-  }
-  stage('Pack') {
-   steps {
-       sh 'dotnet pack '
-   }
-  }
-stage('Test'){
-   steps {
-      sh "dotnet test"
-   }
-  }
-  stage('Publish') {
-   steps {
-      sh "dotnet publish"
-   }
- }
+timestamps {
+
+node () {
+
+	stage ('.nettest - Checkout') {
+ 	 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '7f7e9ccd-d1e6-4eff-b711-303a150f8f82', url: 'https://github.com/KunalRustagi/dot-net-project']]]) 
+	}
+	stage ('build') {
+ 			// Shell build step
+sh """ 
+export PATH=/usr/local/share/dotnet:$PATH
+dotnet build
+ """ 
+	}
+		stage ('test') {
+ 			// Shell build step
+sh """ 
+export PATH=/usr/local/share/dotnet:$PATH
+dotnet test
+ """ 
+	}
+
+	stage ('run') {
+ 			// Shell build step
+sh """ 
+export PATH=/usr/local/share/dotnet:$PATH
+cd firstcoreproject
+dotnet run
+
+ """ 
+	}
+		stage ('publish') {
+ 			// Shell build step
+sh """ 
+export PATH=/usr/local/share/dotnet:$PATH
+
+dotnet publish 
+ """ 
+	}
 }
 }
