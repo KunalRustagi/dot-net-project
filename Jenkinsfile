@@ -1,35 +1,35 @@
-\pipeline {
+pipeline {
  agent any
  
  stages {
   stage('Restore PACKAGES') {
    steps {
-    bat "dotnet restore "
+    sh "dotnet restore "
    }
   }
   stage('Clean') {
    steps {
-    bat 'dotnet clean'
+    sh 'dotnet clean'
    }
   }
   stage('Build') {
    steps {
-    bat 'dotnet build '
+    sh 'dotnet build '
    }
   }
   stage('Pack') {
    steps {
-    bat 'dotnet pack '
+    sh 'dotnet pack '
    }
   }
 stage('Test'){
    steps {
-    bat "dotnet test"
+    sh "dotnet test"
    }
   }
   stage('Publish') {
    steps {
-    bat "dotnet publish"
+    sh "dotnet publish"
    }
  }
 }
