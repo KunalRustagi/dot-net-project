@@ -1,0 +1,7 @@
+Pipeline project
+
+1. Save Entire dotnet project (sln, project, lib) to git repository
+2. Write a Jenkins job to pull a code from the repository
+    a. build
+    b. run test cases
+    c. run the project
