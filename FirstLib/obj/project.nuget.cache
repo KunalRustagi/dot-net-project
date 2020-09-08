@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "h1pEuSeM7xFQQ90ZmnisJU6jbkr7ERRMOt9lc9sbhnCICJ9f+7wja4jwme3/vv6wlEfIS2DhZv28zD3nMq39lw==",
+  "success": true,
+  "projectFilePath": "/Users/kunal/Desktop/networkspace/Firstlib/FirstLib.csproj",
+  "expectedPackageFiles": [
+    "/Users/kunal/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/kunal/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/kunal/.nuget/packages/xunit.runner.visualstudio/2.4.3/xunit.runner.visualstudio.2.4.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'xunit.runner.visualstudio 2.4.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "xunit.runner.visualstudio",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}

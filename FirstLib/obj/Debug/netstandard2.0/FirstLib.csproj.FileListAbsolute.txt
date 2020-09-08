@@ -1,0 +1,13 @@
+/Users/kunal/Desktop/networkspace/Firstlib/bin/Debug/netstandard2.0/FirstLib.deps.json
+/Users/kunal/Desktop/networkspace/FirstLib/bin/Debug/netstandard2.0/FirstLib.dll
+/Users/kunal/Desktop/networkspace/FirstLib/bin/Debug/netstandard2.0/FirstLib.pdb
+/Users/kunal/Desktop/networkspace/FirstLib/obj/Debug/netstandard2.0/FirstLib.csprojAssemblyReference.cache
+/Users/kunal/Desktop/networkspace/FirstLib/obj/Debug/netstandard2.0/FirstLib.AssemblyInfoInputs.cache
+/Users/kunal/Desktop/networkspace/FirstLib/obj/Debug/netstandard2.0/FirstLib.AssemblyInfo.cs
+/Users/kunal/Desktop/networkspace/FirstLib/obj/Debug/netstandard2.0/FirstLib.csproj.CoreCompileInputs.cache
+/Users/kunal/Desktop/networkspace/FirstLib/obj/Debug/netstandard2.0/FirstLib.dll
+/Users/kunal/Desktop/networkspace/FirstLib/obj/Debug/netstandard2.0/FirstLib.pdb
+/Users/kunal/Desktop/networkspace/FirstLib/bin/Debug/netstandard2.0/xunit.runner.visualstudio.testadapter.dll
+/Users/kunal/Desktop/networkspace/FirstLib/bin/Debug/netstandard2.0/xunit.runner.reporters.net452.dll
+/Users/kunal/Desktop/networkspace/FirstLib/bin/Debug/netstandard2.0/xunit.runner.utility.net452.dll
+/Users/kunal/Desktop/networkspace/FirstLib/bin/Debug/netstandard2.0/xunit.abstractions.dll
